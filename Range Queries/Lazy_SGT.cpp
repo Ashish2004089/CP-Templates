@@ -5,9 +5,9 @@
 
 template<typename Node, typename Update>
 struct LazySGT {
-    vector<Node> tree;
-    vector<bool> lazy;
-    vector<Update> updates;
+    vector<Node> tree;  //normal sgement tree
+    vector<bool> lazy; //tell whether the updates need to be apply or not 
+    vector<Update> updates;  // lazy segment tree
     vector<ll> arr; // type may change
     int n;
     int s;
