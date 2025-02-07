@@ -63,3 +63,18 @@ struct Node1 {
 		val = l.val ^ r.val;
 	}
 };
+
+
+
+
+int main() {
+    vector<ll> arr = {3, 5, 7, 9, 11, 13, 15, 17};
+    int n = arr.size();
+
+    // XOR Sparse Table (Non-Idempotent)
+    SparseTable<Node1> stXOR(n, arr);
+    
+    // Min Sparse Table (Idempotent)
+    SparseTable<Node2> stMin(n, arr);
+
+}
